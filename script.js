@@ -284,30 +284,6 @@ window.addEventListener('load', () => {
 });
 
 // ============================================
-// SMOOTH SCROLL FOR NAVIGATION LINKS
-// ============================================
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        const href = this.getAttribute('href');
-        
-        // Проверяем что это не просто "#" (для модальных окон)
-        if (href === '#') {
-            return;
-        }
-        
-        e.preventDefault();
-        const target = document.querySelector(href);
-        
-        if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-        }
-    });
-});
-
-// ============================================
 // PREVENT RIGHT CLICK ON LOGO (optional)
 // ============================================
 const logo = document.querySelector('.logo img');
@@ -391,4 +367,5 @@ console.log('%cX9 VPN', 'color: #fff; font-size: 40px; font-weight: bold; text-s
 console.log('%cSecure Your Online Freedom', 'color: #ccc; font-size: 16px;');
 
 console.log('%cWebsite developed with ❤️', 'color: #888; font-size: 12px;');
+
 
