@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X9 VPN - Fast. Secure. Private.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="nav">
+                <div class="logo">
+                    <img src="logo.jpg" alt="X9 VPN Logo">
+                    <!-- ЗАМЕНИ logo.png НА СВОЙ ЛОГОТИП -->
+                </div>
+                <nav class="nav-menu">
+                   <!-- <a href="#support">Support</a>
+                    <a href="#features">Features</a> -->
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                </nav>
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#support">Support</a>
+        <a href="#features">Features</a>
+        <a href="#privacy">Privacy Policy</a>
+    </div>
+
+    <!-- Hero Section -->
+    <main class="hero">
+        <div class="container">
+            <h1 class="hero-title">
+                FAST. SECURE. PRIVATE.
+            </h1>
+            <p class="hero-subtitle">Secure Your Online Freedom</p>
+            
+            <button class="download-btn" id="downloadBtn">
+                <span id="downloadBtnText">DOWNLOAD FOR WINDOWS</span>
+            </button>
+
+            <!-- Platform Icons -->
+            <div class="platforms">
+                <div class="platform active" data-platform="windows">
+                    <svg class="platform-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/>
+                    </svg>
+                    <span>Windows</span>
+                </div>
+                <div class="platform" data-platform="macos">
+                    <svg class="platform-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                    </svg>
+                    <span>macOS</span>
+                </div>
+                <div class="platform" data-platform="android">
+                    <svg class="platform-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M17.6 9.48l1.84-3.18c.16-.31.04-.69-.26-.85-.29-.15-.65-.06-.83.22l-1.88 3.24a11.5 11.5 0 0 0-8.94 0L5.65 5.67c-.19-.28-.54-.37-.83-.22-.3.16-.42.54-.26.85l1.84 3.18C2.92 12.3 1.5 16.91 1.5 21.5h21c0-4.59-1.42-9.2-4.9-12.02M7 17.25c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25m10 0c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25"/>
+                    </svg>
+                    <span>Android</span>
+                </div>
+                <div class="platform" data-platform="ios">
+                    <svg class="platform-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                    </svg>
+                    <span>iOS</span>
+                </div>
+                <div class="platform" data-platform="linux">
+                    <svg class="platform-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12.504 0c-.155 0-.315.008-.48.021-4.226.333-3.105 4.807-3.17 6.298-.076 1.092-.3 1.953-1.05 3.02-.885 1.051-2.127 2.75-2.716 4.521-.278.832-.41 1.684-.287 2.489a.424.424 0 0 0-.11.135c-.26.268-.45.6-.663.839-.199.199-.485.267-.797.4-.313.136-.658.269-.864.68-.09.189-.136.394-.132.602 0 .199.027.4.098.598.082.199.098.4.174.598.089.196.267.275.446.275.267 0 .593-.082.822-.275.97-.816 1.041-1.267 1.065-1.464.025-.207.042-.338.199-.338.202 0 .335.007.484.086.27.143.49.426.697.788.29.502.763 1.297 1.104 1.666.342.37.829.549 1.381.549.494 0 1.011-.153 1.381-.549.341-.369.814-1.164 1.104-1.666.207-.362.427-.645.697-.788.149-.079.282-.086.484-.086.157 0 .174.131.199.338.024.197.095.648 1.065 1.464.229.193.555.275.822.275.179 0 .357-.079.446-.275.076-.198.092-.399.174-.598.071-.198.098-.399.098-.598.004-.208-.042-.413-.132-.602-.206-.411-.551-.544-.864-.68-.312-.133-.598-.201-.797-.4-.213-.239-.403-.571-.663-.839a.424.424 0 0 0-.11-.135c.123-.805-.009-1.657-.287-2.489-.589-1.771-1.831-3.47-2.716-4.521-.75-1.067-.974-1.928-1.05-3.02-.065-1.491 1.056-5.965-3.17-6.298-.165-.013-.325-.021-.48-.021zm-.751 4.813c.184 0 .333.149.333.333 0 .185-.149.334-.333.334a.333.333 0 0 1-.333-.334c0-.184.148-.333.333-.333zm1.494 0c.185 0 .334.149.334.333 0 .185-.149.334-.334.334a.333.333 0 0 1-.333-.334c0-.184.148-.333.333-.333z"/>
+                    </svg>
+                    <span>Linux</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Download Modal -->
+    <div class="modal" id="downloadModal">
+        <div class="modal-content">
+            <h2 class="modal-title" id="modalTitle">Download X9 for Windows</h2>
+            
+            <div class="download-options">
+                <a href="#" class="download-option" id="directDownload">
+                    <!-- ЗДЕСЬ ВСТАВЬ ССЫЛКУ НА ПРЯМОЕ СКАЧИВАНИЕ -->
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                        <path d="M5 20h14v-2H5v2zM19 9h-4V3H9v6H5l7 7 7-7z"/>
+                    </svg>
+                    <span id="directDownloadText">Windows 10/11</span>
+                </a>
+                
+                <a href="#" class="download-option" id="storeDownload">
+                    <!-- ЗДЕСЬ ВСТАВЬ ССЫЛКУ НА МАГАЗИН ПРИЛОЖЕНИЙ -->
+                    <span id="storeDownloadText">Скачать из Microsoft Store</span>
+                </a>
+            </div>
+
+            <button class="modal-close" id="modalClose">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
