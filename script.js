@@ -362,12 +362,16 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 // Анимация для платформ при загрузке
-platforms.forEach((platform, index) => {
-    platform.style.opacity = '0';
-    platform.style.transform = 'translateY(20px)';
-    platform.style.transition = `all 0.5s ease ${index * 0.1}s`;
-    observer.observe(platform);
-});
+if (platforms && platforms.length > 0) {
+    platforms.forEach((platform, index) => {
+        if (platform) {
+            platform.style.opacity = '0';
+            platform.style.transform = 'translateY(20px)';
+            platform.style.transition = `all 0.5s ease ${index * 0.1}s`;
+            observer.observe(platform);
+        }
+    });
+}
 
 // ============================================
 // PAGE LOAD ANIMATION
@@ -387,3 +391,4 @@ console.log('%cX9 VPN', 'color: #fff; font-size: 40px; font-weight: bold; text-s
 console.log('%cSecure Your Online Freedom', 'color: #ccc; font-size: 16px;');
 
 console.log('%cWebsite developed with ❤️', 'color: #888; font-size: 12px;');
+
