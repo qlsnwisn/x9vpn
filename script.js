@@ -11,7 +11,7 @@ const downloadLinks = {
         store: '#'   // ВСТАВЬ ССЫЛКУ НА MAC APP STORE (если есть)
     },
     android: {
-        direct: '#', // ВСТАВЬ ССЫЛКУ НА ПРЯМОЕ СКАЧИВАНИЕ .APK ФАЙЛА
+        direct: 'https://github.com/qlsnwisn/x9vpn/releases/download/v1.0.0/X9VPN.apk', // ВСТАВЬ ССЫЛКУ НА ПРЯМОЕ СКАЧИВАНИЕ .APK ФАЙЛА
         store: '#'   // ВСТАВЬ ССЫЛКУ НА GOOGLE PLAY STORE
     },
     ios: {
@@ -385,4 +385,5 @@ window.addEventListener('DOMContentLoaded', () => {
 // ============================================
 console.log('%cX9 VPN', 'color: #fff; font-size: 40px; font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);');
 console.log('%cSecure Your Online Freedom', 'color: #ccc; font-size: 16px;');
+
 console.log('%cWebsite developed with ❤️', 'color: #888; font-size: 12px;');
