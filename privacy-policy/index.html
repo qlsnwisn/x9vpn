@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - X9 VPN</title>
-    <link rel="stylesheet" href="privacy-style.css">
+    <link rel="stylesheet" href="/privacy-style.css">
     <link rel="canonical" href="https://x9vpn.com/privacy-policy" />
 </head>
 <body>
@@ -13,15 +13,30 @@
     <div class="container">
         <div class="nav">
             <div class="logo">
-                <img src="logo.jpg" alt="X9 VPN Logo">
+                <img src="/logo.jpg" alt="X9 VPN Logo">
             </div>
             <div class="page-title">Privacy Policy</div>
+            
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </div>
     </header>
 
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <a href="/">Home</a>
+            <a href="/privacy-policy/">Privacy Policy</a>
+        </div>
+    </div>
+
     <!-- Back Button -->
-    <a href="index.html" class="back-button">
+    <a href="/index.html" class="back-button">
         <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
             <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
         </svg>
@@ -340,5 +355,8 @@
             <p><a href="mailto:shantkhankk@gmail.com">shantkhankk@gmail.com</a></p>
         </div>
     </footer>
+
+    <!-- JavaScript -->
+    <script src="/privacy-script.js"></script>
 </body>
 </html>
